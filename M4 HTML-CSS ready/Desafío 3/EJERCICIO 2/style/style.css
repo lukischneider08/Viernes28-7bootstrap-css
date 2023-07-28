@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Dongle:wght@400;700&display=swap");
+
+:root {
+    --fontprimary: "Dongle", sans-serif;
+}
+
+h1 {
+    font-family: var(--fontprimary);
+    font-weight: 700;
+    font-size: 60px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    text-align: center;
+    
+}
+
+div {
+    padding: 50px;
+    font-family: var(--fontprimary);
+    font-weight: 400;
+    font-size: 18px;
+    border-radius: 5px;
+
+}
+
+
+.div1,.div2,.div3 {
+    animation: margin-left 6s ease-in;
+}
+
+@keyframes margin-left {
+
+    50% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+
+}
+
+/* delay*/
+.div2 {
+    animation-delay: 6s;
+}
+
+.div3 {
+    animation-delay: 12s;
+
+}
+
+.div1 {
+    margin: 10px;
+    background-color: orange;
+}
+
+.div2 {
+    margin: 10px;
+    background-color: palegoldenrod;
+}
+
+.div3 {
+    margin: 10px;
+    background-color: pink;
+}
